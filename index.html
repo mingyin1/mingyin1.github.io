@@ -11,31 +11,58 @@
             padding: 0;
             background-color: #f0f0f0;
             color: #333;
+            display: flex;
         }
-        header {
-            text-align: center;
-            padding: 3em 0;
+        nav {
             background-color: #1E90FF;
-            color: #fff;
+            width: 20%;
+            z-index: 1000;
+            transition: background-color 0.3s;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        main {
+            margin-left: 20%;
+            padding: 2em;
+            width: 80%;
         }
         section {
-            margin: 2em;
+            margin: 2em 0;
             padding: 2em;
             background-color: #fff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.8em;
+            scroll-margin-top: 100px;
+            max-width: 800px;
         }
         h2 {
+            font-size: 2.5em;
             margin-top: 0;
-            font-size: 2em;
-            color: #1E90FF;
-        }
-        a {
-            text-decoration: none;
             color: #1E90FF;
         }
         ul {
@@ -48,106 +75,117 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ming Yin</h1>
-        <p><a href="mailto:mingyin@mail.ustc.edu.cn">mingyin@mail.ustc.edu.cn</a></p>
-    </header>
-
-    <section>
-        <h2>Education</h2>
-        <p>
-            <strong><a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a></strong><br>
-            Computer Science and Technology<br>
-            <em><a href="http://en.scgy.ustc.edu.cn/">School of the Gifted Young</a></em><br>
-         
-        </p>
-    </section>
-
-    <section>
-        <h2>Research Experience</h2>
-        <p>
-            <strong>Research Intern</strong><br>
-            LINKE Laboratory, University of Science and Technology of China<br>
-            Supervisor: <a href="https://scholar.google.com/citations?user=JURtNb0AAAAJ&hl=zh-CN&oi=ao">Prof. Xiangyang Li</a>
-        </p>
-        <p>
-            <strong>Research Intern</strong><br>
-            Duke University<br>
-            Supervisor: <a href="https://scholar.google.com/citations?user=t6uCsYoAAAAJ&hl=zh-CN&oi=ao">Prof. Neil Gong</a>,
-            <a href="https://scholar.google.com/citations?user=L6vkkC8AAAAJ&hl=zh-CN&oi=ao">Dr. Minghong Fang</a>
-        </p>
-    </section>
-
-    <section>
-        <h2>Research Interests</h2>
+    <nav>
+        <h1 style="font-size: 2.5em; color: #000;">Ming Yin</h1>
+        <p><a href="mailto:mingyin@mail.ustc.edu.cn" style="font-size: 1em; color: #000;">mingyin@mail.ustc.edu.cn</a></p>
         <ul>
-            <li><strong>AI Security:</strong>
-                <ul>
-                    <li>Secure Federated Learning System</li>
-                    <li>Secure Recommender System</li>
-                </ul>
-            </li>
-            <li><strong>Machine Learning:</strong>
-                <ul>
-                    <li>Trustworthy ML (e.g., robustness, fairness, privacy)</li>
-                    <li>Learning-augmented Optimization (esp, learning to optimize)</li>
-                </ul>
-            </li>
-            <li><strong>Computer Vision:</strong> esp. Generative Models</li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research Experience</a></li>
+            <li><a href="#interests">Research Interests</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#honors">Selected Honors</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#activities">Extracurricular Activities</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Publications</h2>
-        <p><em>* indicates an equal contribution.</em></p>
-        <p>Yichang Xu*, <strong>Ming Yin*</strong>, Minghong Fang and Neil Gong, “Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks" (under submission)</p>
-    </section>
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <p>
+                <strong><a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a></strong><br>
+                <em><a href="http://en.scgy.ustc.edu.cn/">School of the Gifted Young</a></em><br>
 
-    <section>
-        <h2>Selected Honors</h2>
-        <ul>
-            <li><strong>Scholarships</strong>
-                <ul>
-                    <li>Outstanding Student Scholarship, Golden award - Oct 2020</li>
-                    <li>Outstanding Student Scholarship, Bronze award - Oct 2022</li>
-                </ul>
-            </li>
-            <li><strong>Competition Prizes</strong>
-                <ul>
-                    <li>Second Prize, Anhui Province Robot Competition Programming Track (Team Leader) - Oct 2021</li>
-                    <li>240th Place, 2021 ICPC Asia Shenyang Regional Contest - Nov 2021</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+                Computer Science and Technology<br>
+            </p>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong>
-                <ul>
-                    <li>C++, C, Python, Assembly Language, Verilog, HTML/CSS, SQL</li>
-                    <li>Have command of machine learning toolkits, like Tensorflow, Pytorch, Transformers</li>
-                </ul>
-            </li>
-            <li><strong>Miscellaneous:</strong>
-                <ul>
-                    <li>Linux, LaTeX, Markdown, Microsoft Office, Git</li>
-                </ul>
-            </li>
-            <li><strong>English:</strong>
-                <ul>
-                    <li>TOEFL iBT: 105 (R: 29; L: 29; S: 20; W: 27)</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+        <section id="research">
+            <h2>Research Experience</h2>
+            <p>
+                <strong>Research Intern</strong><br>
+                LINKE Laboratory, University of Science and Technology of China<br>
+                Supervisor: <a href="https://scholar.google.com/citations?user=JURtNb0AAAAJ&hl=zh-CN&oi=ao">Prof. Xiangyang Li</a>
+            </p>
+            <p>
+                <strong>Research Intern</strong><br>
+                Duke University<br>
+                Supervisor: <a href="https://scholar.google.com/citations?user=t6uCsYoAAAAJ&hl=zh-CN&oi=ao">Prof. Neil Gong</a>,
+                <a href="https://scholar.google.com/citations?user=L6vkkC8AAAAJ&hl=zh-CN&oi=ao">Dr. Minghong Fang</a>
+            </p>
+        </section>
 
-    <section>
-        <h2>Extracurricular Activities</h2>
-        <p><strong>USTC Go Club</strong> - Sept 2020 - Present</p>
-        <p><strong>USTC Basketball Club</strong> - Sept 2020 - Present</p>
-    </section>
+        <section id="interests">
+            <h2>Research Interests</h2>
+            <ul>
+                <li><strong>AI Security:</strong>
+                    <ul>
+                        <li>Secure Federated Learning System</li>
+                        <li>Secure Recommender System</li>
+                    </ul>
+                </li>
+                <li><strong>Machine Learning:</strong>
+                    <ul>
+                        <li>Trustworthy ML (e.g., robustness, fairness, privacy)</li>
+                        <li>Learning-augmented Optimization (esp, learning to optimize)</li>
+                    </ul>
+                </li>
+                <li><strong>Computer Vision:</strong> esp. Generative Models</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p><em>* indicates an equal contribution.</em></p>
+            <p>Yichang Xu*, <strong>Ming Yin*</strong>, Minghong Fang and Neil Gong, “Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks" (under submission)</p>
+        </section>
+
+        <section id="honors">
+            <h2>Selected Honors</h2>
+            <ul>
+                <li><strong>Scholarships</strong>
+                    <ul>
+                        <li>Outstanding Student Scholarship, Golden award - Oct 2020</li>
+                        <li>Outstanding Student Scholarship, Bronze award - Oct 2022</li>
+                    </ul>
+                </li>
+                <li><strong>Competition Prizes</strong>
+                    <ul>
+                        <li>Second Prize, Anhui Province Robot Competition Programming Track (Team Leader) - Oct 2021</li>
+                        <li>240th Place, 2021 ICPC Asia Shenyang Regional Contest - Nov 2021</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong>
+                    <ul>
+                        <li>C++, C, Python, Assembly Language, Verilog, HTML/CSS, SQL</li>
+                        <li>Have command of machine learning toolkits, like Tensorflow, Pytorch, Transformers</li>
+                    </ul>
+                </li>
+                <li><strong>Miscellaneous:</strong>
+                    <ul>
+                        <li>Linux, LaTeX, Markdown, Microsoft Office, Git</li>
+                    </ul>
+                </li>
+                <li><strong>English:</strong>
+                    <ul>
+                        <li>TOEFL iBT: 105 (R: 29; L: 29; S: 20; W: 27)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="activities">
+            <h2>Extracurricular Activities</h2>
+            <p><strong>USTC Go Club</strong> - Sept 2020 - Present</p>
+            <p><strong>USTC Basketball Club</strong> - Sept 2020 - Present</p>
+        </section>
+    </main>
+
 </body>
 </html>
-
