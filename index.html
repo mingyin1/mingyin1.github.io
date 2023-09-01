@@ -1,191 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ming Yin - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            display: flex;
-        }
-        nav {
-            background-color: #1E90FF;
-            width: 20%;
-            z-index: 1000;
-            transition: background-color 0.3s;
-            position: fixed;
-            top: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 3em;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            width: 100%;
-            align-items: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            transition: color 0.3s;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            color: #FFD700;
-        }
-        main {
-            margin-left: 20%;
-            padding: 2em;
-            width: 80%;
-        }
-        section {
-            margin: 2em 0;
-            padding: 2em;
-            background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            scroll-margin-top: 100px;
-            max-width: 800px;
-        }
-        h2 {
-            font-size: 2.5em;
-            margin-top: 0;
-            color: #1E90FF;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-    </style>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tianlong Chen | UNC Chapel Hill</title>
+  <meta name="description" content="Tianlong Chen">
+  <meta name="author" content="Tianlong Chen">
+  <meta property="og:title" content="Tianlong Chen" />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="http://www.martinsaveski.com" /> -->
+  <meta property="og:site_name" content="Tianlong Chen" />
+  <!-- <link rel="canonical" href="http://www.martinsaveski.com" /> -->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
 </head>
 <body>
-    <nav>
-        <h1 style="font-size: 2.5em; color: #000;">Ming Yin</h1>
-        <p><a href="mailto:mingyin@mail.ustc.edu.cn" style="font-size: 1em; color: #000;">mingyin@mail.ustc.edu.cn</a></p>
-        <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research Experience</a></li>
-            <li><a href="#interests">Research Interests</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#honors">Selected Honors</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#activities">Extracurricular Activities</a></li>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img class="u-max-full-width" src='/assets/profile-pics/TLC.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Tianlong Chen</h1>
+            <p>Incoming Assistant Professor <br/>  Computer Science, The University of North Carolina at Chapel Hill <br/> Postdoctoral Researcher <br/> CSAIL@MIT - BMI@Harvard - Broad Institute of MIT and Havard </p>
+            <p><small> tianlong@mit.edu </small></p>
+            <p>
+              <span onclick="window.open('https://twitter.com/TianlongChen4')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/tianlong-chen-783862167/')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/Tianlong-Chen')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://scholar.google.com/citations?user=LE3ctn0AAAAJ')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#lab>UNITES Lab</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>CV</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#link>Useful Links</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#me>More About me</a></li>
         </ul>
+      </div>
     </nav>
 
-    <main>
-        <section id="education">
-            <h2>Education</h2>
-            <p>
-                <strong><a href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a></strong><br>
-                <em><a href="http://en.scgy.ustc.edu.cn/">School of the Gifted Young</a></em><br>
+    <!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  Tianlong Chen received the Ph.D. degree in Electrical and Computer Engineering from University of Texas at Austin, TX, USA, in 2023.
+  He will start as an Assistant Professor of Computer Science at The University of North Carolina at Chapel Hill in Fall 2024. Before that,
+  he will be a Postdoctoral Researcher at Massachusetts Institute of Technology (CSAIL@MIT), Harvard (BMI@Harvard), and Borad Institute of MIT & Harvard in 2023-2024.
+  </p>
 
-                Computer Science and Technology<br>
-            </p>
-        </section>
+  <p>
+  His research focuses on building <b> accurate, trustworthy, and efficient machine learning </b> systems. He devotes his most recent passion to various (A) important <u> machine learning problems </u>
+  - sparsity, robustness, learning to optimize, graph learning, and diffusion models; (B) <u> interdisciplinary scientific challenges </u> - bioengineering and quantum comptuing. He received
+  IBM Ph.D. Fellowship, Adobe Ph.D. Fellowship, Graduate Dean's Prestigious Fellowship, and the Best Paper Award from the inaugural Learning on Graphs (LoG) Conference 2022.
+  </p>
 
-        <section id="research">
-            <h2>Research Experience</h2>
-            <p>
-                <strong>Research Intern</strong><br>
-                LINKE Laboratory, University of Science and Technology of China<br>
-                Supervisor: <a href="https://scholar.google.com/citations?user=JURtNb0AAAAJ&hl=zh-CN&oi=ao">Prof. Xiangyang Li</a>
-            </p>
-            <p>
-                <strong>Research Intern</strong><br>
-                Duke University<br>
-                Supervisor: <a href="https://scholar.google.com/citations?user=t6uCsYoAAAAJ&hl=zh-CN&oi=ao">Prof. Neil Gong</a>,
-                <a href="https://scholar.google.com/citations?user=L6vkkC8AAAAJ&hl=zh-CN&oi=ao">Dr. Minghong Fang</a>
-            </p>
-        </section>
+  <p>
+  <b style="color:red;">I am looking for highly motivated students, in terms of RA/TA/externship/internship/visiting students. 
+    Interested candidates are strongly encouraged to contact me by email, together with resume and transcripts.</b>
+  </p> 
+</div>
 
-        <section id="interests">
-            <h2>Research Interests</h2>
-            <ul>
-                <li><strong>AI Security:</strong>
-                    <ul>
-                        <li>Secure Federated Learning System</li>
-                        <li>Secure Recommender System</li>
-                    </ul>
-                </li>
-                <li><strong>Machine Learning:</strong>
-                    <ul>
-                        <li>Trustworthy ML (e.g., robustness, fairness, privacy)</li>
-                        <li>Learning-augmented Optimization (esp, learning to optimize)</li>
-                    </ul>
-                </li>
-                <li><strong>Computer Vision:</strong> esp. Generative Models</li>
-            </ul>
-        </section>
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <p><em>* indicates an equal contribution.</em></p>
-            <p>Yichang Xu*, <strong>Ming Yin*</strong>, Minghong Fang and Neil Gong, “Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks" (under submission)</p>
-        </section>
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#2023">2023</div></li>
+    <!-- <li><div class="button" data-ref="#all">All</div></li> -->
+  </ul>
 
-        <section id="honors">
-            <h2>Selected Honors</h2>
-            <ul>
-                <li><strong>Scholarships</strong>
-                    <ul>
-                        <li>Outstanding Student Scholarship, Golden award - Oct 2020</li>
-                        <li>Outstanding Student Scholarship, Bronze award - Oct 2022</li>
-                    </ul>
-                </li>
-                <li><strong>Competition Prizes</strong>
-                    <ul>
-                        <li>Second Prize, Anhui Province Robot Competition Programming Track (Team Leader) - Oct 2021</li>
-                        <li>240th Place, 2021 ICPC Asia Shenyang Regional Contest - Nov 2021</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+  <div class="tab-content">
+    <div class="tab-pane active" id="2023">
+      <div class="paper">
+        <p class="title"> &bull; <b> Jul., 2023 </b> &nbsp;&nbsp; I started my PostDoc at CSAIL@MIT and BMI@Harvard.
+          <br> &bull; <b> Jul., 2023 </b> &nbsp;&nbsp; Three ICCV'23 accepted - Adaptive Multi-Task Vision MoE + Robust MoE + Generalizable NeRF w. MoE.
+          <br> &bull; <b> Jul., 2023 </b> &nbsp;&nbsp; One QCE'23 accepted - Sparse Circuit Design for Quantum Computing.
+          <br> &bull; <b> Jun., 2023 </b> &nbsp;&nbsp; I received the <a href=https://sites.google.com/view/advml/advml-rising-star-award> 2023 AdvML Rising Star Award </a>. Many thanks for the acknowledgment.
+          <br> &bull; <b> May, 2023 </b> &nbsp;&nbsp; One ACL'23 accepted - Sparse LLM Tuning.
+          <br> &bull; <b> May, 2023 </b> &nbsp;&nbsp; Three ICML'23 accepted - Instant Soup (Oral) + Graph Ladling + L2O Game.
+          <br> &bull; <b> May, 2023 </b> &nbsp;&nbsp; I received the Ph.D. degree from ECE@UT Austin. I deeply appreciate all the support and help from my family, advisor <a href=https://vita-group.github.io/group.html> (Prof. Atlas Wang) </a>, collaborators, and friends! 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong>
-                    <ul>
-                        <li>C++, C, Python, Assembly Language, Verilog, HTML/CSS, SQL</li>
-                        <li>Have command of machine learning toolkits, like Tensorflow, Pytorch, Transformers</li>
-                    </ul>
-                </li>
-                <li><strong>Miscellaneous:</strong>
-                    <ul>
-                        <li>Linux, LaTeX, Markdown, Microsoft Office, Git</li>
-                    </ul>
-                </li>
-                <li><strong>English:</strong>
-                    <ul>
-                        <li>TOEFL iBT: 105 (R: 29; L: 29; S: 20; W: 27)</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+<div class="docs-section" id="lab">  
+  <h4>UNITES Lab</h4> 
+  <!-- <div class="figure">
+    <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="libs/icon.png" width="100" height="100" /> 
+  </div> -->
+  <p>
+  <b><u>U</u></b>niversity of <b><u>N</u></b>orth Carolina, A<b><u>I</u></b> <b><u>T</u></b>rustworthiness, <b><u>E</u></b>fficiency, and for <b><u>S</u></b>cience (<b><a href="" target="_blank">UNITES</a></b>) Group
+  will be an active research lab at UNC Chapel Hill. Our research interests span the area of artificial intelligence (AI), machine learning (ML), optimization, computer vision, natural
+  language processing, and data science, with two major focuses on (A) establishing robust and efficient AI systems; (B) bridging the gap between AI and societal & scientific challenges.
+  Students' information is presented below.
+  </p>
 
-        <section id="activities">
-            <h2>Extracurricular Activities</h2>
-            <p><strong>USTC Go Club</strong> - Sept 2020 - Present</p>
-            <p><strong>USTC Basketball Club</strong> - Sept 2020 - Present</p>
-        </section>
-    </main>
+  <ul class="tab-nav">
+    <li><div class="button" data-ref="#phd">Ph.D.</div></li>
+    <li><div class="button" data-ref="#postdoc">PostDoc</div></li>
+    <li><div class="button" data-ref="#master">Master</div></li>
+    <li><div class="button" data-ref="#undergrad">Undergrad</div></li>
+    <li><div class="button active" data-ref="#interns">Visitors/Interns</div></li>     
+  </ul>
 
+  <div class="tab-content">
+    <div class="tab-pane" id="phd">                        
+
+    </div>
+
+    <div class="tab-pane" id="postdoc">
+      
+    </div>  
+
+    <div class="tab-pane" id="master">
+      
+      
+    </div>
+
+    <div class="tab-pane" id="undergrad">
+      
+    </div>    
+
+    <div class="tab-pane active" id="interns">
+
+      <div class="student">
+          
+        <p class="title">
+          <b>Kaixin Zheng</b> ( Summer 2023 ) [Remote] <br>
+          <b>Silin Cai</b> ( Summer 2023 ) [Remote]
+        </p> 
+        
+      </div>              
+      
+    </div>    
+
+  </div>
+</div> 
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Full publications on <a href="https://scholar.google.com/citations?user=LE3ctn0AAAAJ" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates authors with equal contribution. <sup>&#x2606;</sup> indicates my students or interns.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#2023_paper">May 2023 - Now</div></li>
+    <li><div class="button" data-ref="#selected_phd_paper">Selected during Ph.D.</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="2023_paper">
+      <div class="paper">
+        <p class="title"><b>AdaMV-MoE: Adaptive Multi-Task Vision Mixture-of-Experts</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Xuxi Chen<sup>&#8225;</sup>, Xianzhi Du, Abdullah Rashwan, Fan Yang, Huizhong Chen, Zhangyang Wang, Yeqing Li</p>
+        <p><i>ICCV'23: International Conference on Computer Vision</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Robust Mixture-of-Expert Training for Convolutional Neural Networks</b></p>
+        <p>Yihua Zhang, Ruisi Cai, <b>Tianlong Chen</b>, Guanhua Zhang, Huan Zhang, Pin-Yu Chen, Shiyu Chang, Zhangyang Wang, Sijia Liu</p>
+        <p><i>ICCV'23: International Conference on Computer Vision</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>GNT-MOVE: Generalizable NeRF Transformer with Mixture-of-View-Experts</b></p>
+        <p>Wenyan Cong, Hanxue Liang, Peihao Wang, Zhiwen Fan, <b>Tianlong Chen</b>, Mukund Varma, Yi Wang, Zhangyang Wang</p>
+        <p><i>ICCV'23: International Conference on Computer Vision</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>QuantumSEA: In-Time Sparse Exploration for Noise Adaptive Quantum Circuits</b></p>
+        <p><b>Tianlong Chen</b>, Zhenyu Zhang, Hanrui Wang, Jiaqi Gu, Zirui Li, David Z. Pan, Frederic Chong, Song Han, Zhangyang Wang</p>
+        <p><i>QCE'23: International Conference on Quantum Computing and Engineering</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>DSEE: Dually Sparsity-embedded Efficient Tuning of Pre-trained Language Models</b></p>
+        <p>Xuxi Chen, <b>Tianlong Chen</b>, Weizhu Chen, Ahmed Hassan Awadallah, Zhangyang Wang, Yu Cheng</p>
+        <p><i>ACL'23: Annual Meeting of the Association for Computational Linguistics</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://arxiv.org/pdf/2111.00160.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/DSEE" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Instant Soup: Cheap Pruning Ensemble in A Single Pass Can Draw Lottery Tickets from Large Models</b></p>
+        <p>Ajay Jaiswal, Shiwei Liu, <b>Tianlong Chen</b>, Ying Ding, Zhangyang Wang</p>
+        <p><i>ICML'23: International Conference on Machine Learning</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://arxiv.org/pdf/2306.10460.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/instant_soup" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Graph Ladling: Shockingly Simple Parallel GNN Training without Intermediate Communication</b></p>
+        <p>Ajay Jaiswal, Shiwei Liu, <b>Tianlong Chen</b>, Ying Ding, Zhangyang Wang</p>
+        <p><i>ICML'23: International Conference on Machine Learning</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://arxiv.org/pdf/2306.10466.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/graph_ladling" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Learning to Optimize Differential Games</b></p>
+        <p>Xuxi Chen, Nelson Vadori, <b>Tianlong Chen</b>, Zhangyang Wang</p>
+        <p><i>ICML'23: International Conference on Machine Learning</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://proceedings.mlr.press/v202/chen23ab/chen23ab.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/L2PG" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="selected_phd_paper">
+      <div class="paper">
+        <h5><u>Fundamental Sparse Model and Algorithms</u></h5>
+        <p class="title"><b>The Lottery Ticket Hypothesis for Pre-trained BERT Networks</b></p>
+        <p><b>Tianlong Chen</b>, Jonathan Frankle, Shiyu Chang, Sijia Liu, Yang Zhang, Zhangyang Wang, Michael Carbin</p>
+        <p><i>NeurIPS'20: Conference on Neural Information Processing Systems</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://arxiv.org/pdf/2007.12223.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/BERT-Tickets" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!</b></p>
+        <p>Shiwei Liu<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Zhenyu Zhang, Xuxi Chen, Tianjin Huang, Ajay Kumar Jaiswal, Zhangyang Wang</p>
+        <p><i>ICLR'23: International Conference on Learning Representations</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=J6F3lLg4Kdp" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/SMC-Bench" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>Data-driven Discovery of Optimization Algorithms</u></h5>
+        <p class="title"><b>Learning to Optimize: A Primer and A Benchmark</b></p>
+        <p>(&alpha;-&beta;) <b>Tianlong Chen</b>, Xiaohan Chen, Wuyang Chen, Howard Heaton, Jialin Liu, Zhangyang Wang, Wotao Yin</p>
+        <p><i>JMLR'22: Journal of Machine Learning Research</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://jmlr.org/papers/volume23/21-0308/21-0308.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Open-L2O" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Scalable Learning to Optimize: A Learned Optimizer Can Train Big Models</b></p>
+        <p>Xuxi Chen<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Yu Cheng, Weizhu Chen, Ahmed Awadallah, Zhangyang Wang</p>
+        <p><i>ECCV'22: European Conference on Computer Vision</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136830376.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Scalable-L2O" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>Responsible and Reliable Machine Learning</u></h5>
+        <p class="title"><b>Adversarial Robustness: From Self-Supervised Pre-Training to Fine-Tuning</b></p>
+        <p><b>Tianlong Chen</b>, Sijia Liu, Shiyu Chang, Yu Cheng, Lisa Amini, Zhangyang Wang</p>
+        <p><i>CVPR'20: Conference on Computer Vision and Pattern Recognition</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Adversarial_Robustness_From_Self-Supervised_Pre-Training_to_Fine-Tuning_CVPR_2020_paper.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Adv-SS-Pretraining" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Linearity Grafting: How Neuron Pruning Helps Certifiable Robustness</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Huan Zhang<sup>&#8225;</sup>, Zhenyu Zhang, Shiyu Chang, Sijia Liu, Pin-Yu Chen, Zhangyang Wang</p>
+        <p><i>ICML'22: International Conference on Machine Learning</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://proceedings.mlr.press/v162/chen22af/chen22af.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Linearity-Grafting" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>Scalable Graph Neural Networks</u></h5>
+        <p class="title"><b>Bag of Tricks for Training Deeper Graph Neural Networks: A Comprehensive Benchmark Study</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Kaixiong Zhou<sup>&#8225;</sup>, Keyu Duan, Wenqing Zheng, Peihao Wang, Xia Hu, Zhangyang Wang</p>
+        <p><i>TPAMI'22: IEEE Transactions on Pattern Analysis and Machine Intelligence</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://ieeexplore.ieee.org/document/9773017" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Deep_GCN_Benchmarking" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>You Can Have Better Graph Neural Networks by Not Training Weights at All: Finding Untrained GNNs Tickets</b></p>
+        <p>Tianjin Huang, <b>Tianlong Chen</b>, Meng Fang, Vlado Menkovski, Jiaxu Zhao, Lu Yin, Yulong Pei, Decebal Constantin Mocanu, Zhangyang Wang, Mykola Pechenizkiy, Shiwei Liu</p>
+        <p><i><b style="color:red;">(Best Paper Award)</b> LOG'22: Learning on Graphs Conference</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=dF6aEW3_62O" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/TienjinHuang/UGTs-LoG" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Graph Contrastive Learning with Augmentations</b></p>
+        <p>Yuning You<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Yongduo Sui, Ting Chen, Zhangyang Wang, Yang Shen</p>
+        <p><i>NeurIPS'20: Conference on Neural Information Processing Systems</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://proceedings.neurips.cc/paper_files/paper/2020/file/3fe230348e9a12c13120749e3f9fa4cd-Paper.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/Shen-Lab/GraphCL" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>AI4Science</u></h5>
+        <p class="title"><b>HotProtein: A Novel Framework for Protein Thermostability Prediction and Editing</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Chengyue Gong<sup>&#8225;</sup>, Daniel Jesus Diaz, Xuxi Chen, Jordan Tyler Wells, qiang liu, Zhangyang Wang, Andrew Ellington, Alex Dimakis, Adam Klivans</p>
+        <p><i>ICLR'23: International Conference on Learning Representations</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=YDJRFWBMNby" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/HotProtein" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>QuantumSEA: In-Time Sparse Exploration for Noise Adaptive Quantum Circuits</b></p>
+        <p><b>Tianlong Chen</b>, Zhenyu Zhang, Hanrui Wang, Jiaqi Gu, Zirui Li, David Z. Pan, Frederic Chong, Song Han, Zhangyang Wang</p>
+        <p><i>QCE'23: International Conference on Quantum Computing and Engineering </i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+  <p>Full Resume in <a href="https://drive.google.com/file/d/132N0nC5L8Da_Crpx92r--Zxg1aPjQ8yf/view?usp=share_link" target="_blank">PDF</a>.</p>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">UNC Chapel Hill</span>
+          <span class="time-wrapper"><span class="time">Jul. 2024 - </span></span>
+        </div>
+        <div class="desc"><b>Assistant Professor in Computer Science</b> <br/> UNITES Lab at The University of North Carolina at Chapel Hill</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">MIT and Harvard</span>
+          <span class="time-wrapper"><span class="time">Jul. 2023 - Jul. 2024</span></span>
+        </div>
+        <div class="desc"><b>Postdoctoral Researcher in CSAIL@MIT and BMI@Harvard</b> <br/> Broad Institute of MIT and Havard</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">UT Austin</span>
+          <span class="time-wrapper"><span class="time">Aug. 2018 – May 2023</span></span>
+        </div>
+        <div class="desc"><b>Ph.D. in Electrical and Computer Engineering</b> <br/> R.K. I studied at Texas A&M from Aug. 2018 to Aug. 2020.</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">USTC</span>
+          <span class="time-wrapper"><span class="time">Aug. 2013 - May 2017</span></span>
+        </div>
+        <div class="desc"><b>B.Sc. in Applied Math & B.Eng. in Computer Science</b> <br/> School of the Gifted Young, Univ. of Science and Technology of China</div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+<div class="docs-section" id="link">
+  <h4>Useful Links</h4>
+  <p class="title"> 
+    &bull; <b>[Student Recuriting]</b> <a href="https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=994619" target="_blank">ADS in Chinese</a>, <a href="https://docs.google.com/document/d/1Gt-imbJDRMgyTozRpjarD5PPDnxN4cXzeKB1VSop_Pc/edit?usp=sharing" target="_blank">ADS in English</a> <br>
+    &bull; <b>[Teaching]</b> TBD <br>
+    &bull; <b>[Job Application Package]</b> <a href="https://www.dropbox.com/s/1xktxhg3u9m49nk/Research_Statement.pdf?dl=0" target="_blank">Research Statement</a>, <a href="https://www.dropbox.com/s/9akg98g87x8pdk5/%5BJob%20Talk%5D%20Tianlong%20Chen%20v5.3%20-%20Share.pdf?dl=0" target="_blank">Job Talk Slides</a>, <a href="https://drive.google.com/file/d/132N0nC5L8Da_Crpx92r--Zxg1aPjQ8yf/view?usp=share_link" target="_blank">Resume</a> <br>
+    &bull; <b>[Tool]</b> <a href="https://github.com/VITA-Group/Open-L2O" target="_blank">Learning to Optimize</a> <br>
+    &bull; <b>[UNC]</b> <a href="https://cs.unc.edu/about/why-cs/" target="_blank">Department's Why-UNC Page</a>, <a href="https://cs.unc.edu/about/rankings/" target="_blank">UNC CS Ranking</a>
+  </p>
+</div>
+
+
+<div class="docs-section" id="me">
+    <h4>More About Me</h4>
+    <p class="title"> &bull; I am a big fan of Pok&#233;mon. Playing Pok&#233;mon Go is one of my daily activities. Join me, catch the Pok&#233;mon in North Carolina, and be a good Pok&#233;mon trainer!
+      <br> &bull; I also enjoy Hip-Hop and Country music. <a href="https://www.youtube.com/watch?v=p49e8vgHvh8" target="_blank">Air (艾热)</a> is one of my favorite Chinese Hip-Hop stars.
+    </p>
+</div>
+
+This website was built with <a href="https://jekyllrb.com" target="_blank">jekyll</a> based on a template by <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a>.
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Tianlong Chen
+        </div>
+        <div class="four columns">
+          Last updated on July 2023
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/TianlongChen4')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/tianlong-chen-783862167/')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/Tianlong-Chen')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://scholar.google.com/citations?user=LE3ctn0AAAAJ')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
