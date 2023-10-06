@@ -191,3 +191,6 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+.date {
+  text-align: right;
+}
