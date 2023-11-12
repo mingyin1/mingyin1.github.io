@@ -33,8 +33,8 @@ $(document).ready(function() {
         menu = target;
     $target = $(target);
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top + 200
-    }, 2000, 'swing', function () {
+        'scrollTop': $target.offset().top -40
+    }, 0, 'swing', function () {
         window.location.hash = target;
         $(document).on("scroll", onScroll);
     });
