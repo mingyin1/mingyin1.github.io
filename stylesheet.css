@@ -138,7 +138,7 @@ h2 {
     color: #1a202c;
     letter-spacing: -0.5px;
     position: relative;
-    padding-left: 35px;
+    padding-left: 0;
 }
 
 .papertitle {
@@ -158,8 +158,8 @@ h2 {
 }
 
 .name {
-    padding-top: 10px;
-    margin: 0 0 20px 0;
+    padding-top: 0;
+    margin: 0 0 15px 0;
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 42px;
     font-weight: 700;
@@ -256,7 +256,7 @@ table:hover {
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child {
     background: linear-gradient(135deg, #64748b 0%, #475569 100%);
     color: white;
-    padding: 20px 0 15px 0;
+    padding: 10px 0 10px 0;
     margin: -1px -1px 0 -1px;
 }
 
@@ -291,6 +291,11 @@ table[style*="max-width: 800px"] > tbody > tr > td > table:first-child p[style="
 /* Improved spacing for sections */
 td[style*="padding: 5px"] {
     padding: 15px 20px !important;
+}
+
+/* Section headers should have no left padding */
+td[style*="padding: 5px 5px 5px 0"] {
+    padding: 15px 20px 15px 0 !important;
 }
 
 /* Special padding for publication entries */
@@ -331,8 +336,9 @@ p[style="text-align: center"] a::after {
 
 /* Emoji styling with animation */
 h2::before {
-    position: absolute;
+    position: relative;
     left: 0;
+    margin-right: 8px;
     animation: bounce 2s ease-in-out infinite;
 }
 
@@ -459,4 +465,10 @@ h2:contains("Publications") {
 /* Remove top padding for first publication entry */
 table[style*="width: 100%"]:has(.papertitle) {
     margin-top: -10px;
+}
+
+/* Adjust the first td padding in personal info section */
+table[style*="max-width: 800px"] > tbody > tr > td > table:first-child td[style*="padding: 2.5%"] {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
