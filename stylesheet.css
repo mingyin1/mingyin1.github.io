@@ -76,7 +76,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #eef5ff 0%, #d6e7ff 100%);
     min-height: 100vh;
     margin: 0;
     padding: 20px 0;
@@ -85,7 +85,7 @@ body {
 }
 
 a {
-    color: #2563eb;
+    color: #1e40af;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
@@ -93,7 +93,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #1d4ed8;
+    color: #1e3a8a;
     text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ p a::after {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #3b82f6;
     transition: width 0.3s ease;
 }
 
@@ -235,26 +235,26 @@ ul {
 .separator-thin {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, transparent, #e2e8f0 20%, #e2e8f0 80%, transparent);
+    background: linear-gradient(to right, transparent, #cbd5e1 20%, #cbd5e1 80%, transparent);
     margin: 25px 0;
 }
 
 /* Main content container */
 table {
-    background-color: white;
+    background-color: #fafbfc;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.08);
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 table:hover {
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.12);
 }
 
 /* First section special styling */
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child {
-    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #64748b 0%, #475569 100%);
     color: white;
     padding: 20px 0 25px 0;
     margin: -1px -1px 30px -1px;
@@ -270,22 +270,22 @@ table[style*="max-width: 800px"] > tbody > tr > td > table:first-child p {
 }
 
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child a {
-    color: #fbbf24;
+    color: #bfdbfe;
     font-weight: 600;
 }
 
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child a:hover {
-    color: #f59e0b;
+    color: #dbeafe;
 }
 
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child p[style="text-align: center"] a {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(219, 234, 254, 0.2);
     color: white;
     backdrop-filter: blur(10px);
 }
 
 table[style*="max-width: 800px"] > tbody > tr > td > table:first-child p[style="text-align: center"] a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(219, 234, 254, 0.3);
 }
 
 /* Improved spacing for sections */
@@ -303,14 +303,14 @@ p[style="text-align: center"] a {
     display: inline-block;
     padding: 6px 14px;
     margin: 0 4px;
-    background-color: #f3f4f6;
+    background-color: #e0e7ff;
     border-radius: 6px;
     transition: all 0.3s ease;
     font-size: 16px;
 }
 
 p[style="text-align: center"] a:hover {
-    background-color: #e5e7eb;
+    background-color: #c7d2fe;
     transform: translateY(-2px);
 }
 
@@ -333,7 +333,7 @@ h2::before {
 /* Publication venue styling */
 em span[style*="color:blue"] {
     font-weight: 600;
-    background-color: #dbeafe;
+    background-color: #e0e7ff;
     padding: 2px 8px;
     border-radius: 4px;
 }
@@ -383,12 +383,12 @@ html {
 
 /* Selection color */
 ::selection {
-    background-color: #60a5fa;
+    background-color: #6366f1;
     color: white;
 }
 
 ::-moz-selection {
-    background-color: #60a5fa;
+    background-color: #6366f1;
     color: white;
 }
 
