@@ -143,7 +143,7 @@ h2 {
     color: #1a202c;
     letter-spacing: -0.5px;
     position: relative;
-    padding-left: 0;
+    padding-left: 3px;
 }
 
 .papertitle {
@@ -316,7 +316,7 @@ td[style*="padding: 5px"] {
 
 /* Section headers should have no left padding */
 td[style*="padding: 5px 5px 5px 0"] {
-    padding: 15px 20px 15px 0 !important;
+    padding: 15px 20px 15px 3px !important;
 }
 
 /* Special padding for publication entries */
