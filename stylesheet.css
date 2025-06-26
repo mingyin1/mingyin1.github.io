@@ -545,3 +545,73 @@ td[style*="width: 30%"] .one:has(img[src*="zoom"]):hover {
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.25);
     border-color: #c7d2fe;
 }
+
+/* Reviewer Service styling */
+.reviewer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.review-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-item.conference {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    color: #4338ca;
+    border: 1px solid #c7d2fe;
+}
+
+.review-item.conference:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    background: linear-gradient(135deg, #c7d2fe 0%, #a5b4fc 100%);
+}
+
+.review-item.journal {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.review-item.journal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+/* Add icon before conference items */
+.review-item.conference::before {
+    content: '🎯';
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* Add icon before journal items */
+.review-item.journal::before {
+    content: '📚';
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* Responsive design for reviewer items */
+@media (max-width: 768px) {
+    .reviewer-container {
+        gap: 8px;
+    }
+    
+    .review-item {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
