@@ -362,6 +362,14 @@ em span[style*="color:red"] {
     border-radius: 4px;
 }
 
+em span[style*="color:gold"] {
+    font-weight: 600;
+    background-color: #fef3c7;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #d97706 !important;
+}
+
 /* Media coverage links */
 td[style*="width: 90%"] a[href*="mp.weixin"] {
     background-color: #f0fdf4;
