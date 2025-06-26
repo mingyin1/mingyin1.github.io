@@ -369,6 +369,7 @@ em span[style*="color:blue"] {
     background-color: #e0e7ff;
     padding: 2px 8px;
     border-radius: 4px;
+    font-size: inherit;
 }
 
 em span[style*="color:red"] {
@@ -376,6 +377,7 @@ em span[style*="color:red"] {
     background-color: #fee2e2;
     padding: 2px 8px;
     border-radius: 4px;
+    font-size: inherit;
 }
 
 em span[style*="color:gold"] {
@@ -384,6 +386,7 @@ em span[style*="color:gold"] {
     padding: 2px 8px;
     border-radius: 4px;
     color: #8b7355 !important;
+    font-size: inherit;
 }
 
 /* Media coverage links */
@@ -564,18 +567,27 @@ td[style*="width: 30%"] .one:has(img[src*="zoom"]):hover {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
 }
 
 .review-item.conference {
-    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-    color: #4338ca;
-    border: 1px solid #c7d2fe;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    color: #374151;
+    border: 1px solid #d1d5db;
 }
 
 .review-item.conference:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
-    background: linear-gradient(135deg, #c7d2fe 0%, #a5b4fc 100%);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
 }
 
 .review-item.journal {
@@ -588,20 +600,6 @@ td[style*="width: 30%"] .one:has(img[src*="zoom"]):hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
     background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
-}
-
-/* Add icon before conference items */
-.review-item.conference::before {
-    content: '🎯';
-    margin-right: 6px;
-    font-size: 14px;
-}
-
-/* Add icon before journal items */
-.review-item.journal::before {
-    content: '📚';
-    margin-right: 6px;
-    font-size: 14px;
 }
 
 /* Responsive design for reviewer items */
