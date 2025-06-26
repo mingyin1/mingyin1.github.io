@@ -130,6 +130,11 @@ strong {
     color: #2d3748;
 }
 
+em {
+    font-style: normal;
+    font-size: inherit;
+}
+
 h2 {
     margin: 0 0 10px 0;
     font-weight: 600;
@@ -318,6 +323,13 @@ td[style*="padding: 5px 5px 5px 0"] {
 td[style*="padding: 5px"][style*="width: 30%"],
 td[style*="padding: 5px"][style*="width: 90%"] {
     padding-top: 10px !important;
+    font-size: 17px !important;
+}
+
+/* Ensure em tags in publication entries maintain proper size */
+td[style*="width: 90%"] em {
+    font-size: 17px !important;
+    font-style: normal;
 }
 
 /* First publication entry should have no top padding */
