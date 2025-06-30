@@ -391,7 +391,7 @@ p[style="text-align: center"] a {
     border-radius: 6px;
     transition: all 0.3s ease;
     font-size: 16px;
-    color: #bfdbfe !important;
+    color: #8b7355 !important;
     border: 1px solid #d4c4a8;
     position: relative;
     overflow: hidden;
@@ -401,7 +401,7 @@ p[style="text-align: center"] a:hover {
     background: linear-gradient(135deg, #ede4d3 0%, #ddd0b8 100%);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
-    color: #dbeafe !important;
+    color: #8b7355 !important;
 }
 
 /* 金属光泽动画 */
