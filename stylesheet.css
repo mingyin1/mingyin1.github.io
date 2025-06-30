@@ -177,11 +177,31 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .hoverZoomLink:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(139, 115, 85, 0.2);
+}
+
+/* 头像金属光泽效果 */
+.hoverZoomLink::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(245, 241, 232, 0.4) 50%, transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.8s ease;
+    z-index: 1;
+}
+
+.hoverZoomLink:hover::before {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
 }
 
 /* Paper image containers */
@@ -201,7 +221,25 @@ h2 {
 
 .one:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.15);
+}
+
+/* 论文图片金属光泽效果 */
+.one::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(245, 241, 232, 0.3) 50%, transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+.one:hover::before {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
 }
 
 .one img {
@@ -210,6 +248,8 @@ h2 {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
+    position: relative;
+    z-index: 2;
 }
 
 /* Special styling for Zoom logo */
@@ -347,15 +387,38 @@ p[style="text-align: center"] a {
     display: inline-block;
     padding: 6px 14px;
     margin: 0 4px;
-    background-color: #e0e7ff;
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
     border-radius: 6px;
     transition: all 0.3s ease;
     font-size: 16px;
+    color: #8b7355;
+    border: 1px solid #d4c4a8;
+    position: relative;
+    overflow: hidden;
 }
 
 p[style="text-align: center"] a:hover {
-    background-color: #c7d2fe;
+    background: linear-gradient(135deg, #ede4d3 0%, #ddd0b8 100%);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
+    color: #6b5a42;
+}
+
+/* 金属光泽动画 */
+p[style="text-align: center"] a::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+p[style="text-align: center"] a:hover::before {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
 }
 
 p[style="text-align: center"] a::after {
@@ -579,39 +642,56 @@ td[style*="width: 30%"] .one:has(img[src*="zoom"]):hover {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    color: #374151;
-    border: 1px solid #d1d5db;
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
+    color: #8b7355;
+    border: 1px solid #d4c4a8;
 }
 
 .review-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
-    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
+    background: linear-gradient(135deg, #ede4d3 0%, #ddd0b8 100%);
+}
+
+/* Reviewer标签金属光泽效果 */
+.review-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+.review-item:hover::before {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
 }
 
 .review-item.conference {
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    color: #374151;
-    border: 1px solid #d1d5db;
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
+    color: #8b7355;
+    border: 1px solid #d4c4a8;
 }
 
 .review-item.conference:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
-    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
+    background: linear-gradient(135deg, #ede4d3 0%, #ddd0b8 100%);
 }
 
 .review-item.journal {
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    color: #374151;
-    border: 1px solid #d1d5db;
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
+    color: #8b7355;
+    border: 1px solid #d4c4a8;
 }
 
 .review-item.journal:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
-    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
+    background: linear-gradient(135deg, #ede4d3 0%, #ddd0b8 100%);
 }
 
 /* Responsive design for reviewer items */
