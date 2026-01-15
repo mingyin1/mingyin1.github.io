@@ -210,7 +210,7 @@ pre>code {
 }
 
 .site-nav {
-    float: right;
+    text-align: center;
     line-height: 56px;
     z-index: 3
 }
@@ -760,10 +760,13 @@ pre>code {
 
 .circle-img {
     margin: 0px auto;
-    width: 168px;
-    border-width: 4px;
+    width: 180px;
+    height: auto;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 50%
+    border-color: #292929;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .border-dark {
