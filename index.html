@@ -1,615 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ming Yin</title>
 
-    <meta name="author" content="Ming Yin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <!-- Icons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <!-- Base styles from Wanjia Zhao template -->
+    <link rel="stylesheet" href="wanjiazhao1203.github.io/main.css" />
+    <link rel="stylesheet" href="wanjiazhao1203.github.io/css/custom.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="wanjiazhao1203.github.io/css/academicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+    <!-- Minimal custom tweaks -->
+    <style>
+      .announcement {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(74, 144, 226, 0.08));
+        border-left: 4px solid gold;
+        padding: 12px 16px;
+        border-radius: 10px;
+        margin: 18px 0;
+        line-height: 1.55;
+      }
+      .announcement .tag {
+        color: gold;
+        font-weight: 700;
+      }
+      .announcement .meta-highlight {
+        background: linear-gradient(135deg, #4a90e2, #82c6ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .bio-body ul {
+        padding-left: 18px;
+        margin: 0;
+      }
+      .pub-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .pub-item {
+        margin-bottom: 18px;
+      }
+      .pub-title {
+        font-weight: 600;
+      }
+      .pub-venue {
+        color: #4a90e2;
+        font-weight: 600;
+      }
+      .section-gap {
+        margin-top: 12px;
+      }
+    </style>
   </head>
 
   <body>
-    <table
-      style="
-        width: 100%;
-        max-width: 800px;
-        border: 0px;
-        border-spacing: 0px;
-        border-collapse: separate;
-        margin-right: auto;
-        margin-left: auto;
-      "
-    >
-      <tbody>
-        <tr style="padding: 0px">
-          <td style="padding: 0px">
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr style="padding: 0px">
-                  <td style="padding: 2.5%; width: 63%; vertical-align: middle">
-                    <p class="name" style="text-align: center">
+    <header class="site-header">
+      <div class="wrapper">
+        <nav class="site-nav">
+          <a href="#" class="menu-icon">
+            <svg viewBox="0 0 18 15">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+            </svg>
+          </a>
+
+          <div class="trigger">
+            <a class="page-link" href="#about"><b>About</b></a>
+            <a class="page-link" href="#news"><b>News</b></a>
+            <a class="page-link" href="#publications"><b>Publications</b></a>
+            <a class="page-link" href="#experience"><b>Experience</b></a>
+            <a class="page-link" href="#education"><b>Education</b></a>
+            <a class="page-link" href="#service"><b>Service</b></a>
+            <a class="page-link" href="#teaching"><b>Teaching</b></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="profile-cover" class="cover shallow-bg img-responsive">
+      <div id="profile-namecard" class="profile-wrapper wrapper-light">
+        <div id="my-pic" class="profile-col profile-col-1">
+          <img id="profile-avatar" src="images/Ming3.png" alt="Ming Yin" class="circle-img border-dark" />
+        </div>
+        <div id="my-contact" class="profile-col profile-col-2">
+          <div id="my-name" class="text-grey-dark">
                       Ming Yin
-                    </p>
-                    <p>
-                      I am a second-year PhD student at <a href="https://duke.edu/">Duke University</a>, supervised by <a href="https://ece.duke.edu/faculty/yiran-chen">Prof. Yiran Chen</a>.
-
-                    </p>
-                    <p>
-                      I received my Bachelor's degree from <a href="https://en.scgy.ustc.edu.cn/">School of the Gifted Young</a>, <a href="https://en.ustc.edu.cn/">USTC</a> in 2024 at 20 years old.<br>
-                      <!--During my undergraduate studies, I worked closely with <a href="https://people.duke.edu/~zg70/">Prof. Neil Gong</a> and <a href="https://scholar.google.com/citations?user=eTCfl6cAAAAJ&hl=en">Prof. Weiming Zhang</a>./> -->
-                    </p>
-
-                    <!--<p>
-                      I am currently interested in LLM Agents, LLM Reasoning, and Trustworthy AI.
-                    </p>-->
-
-                    <p>
-                      <span style="color: gold; font-weight: bold;">🎉 New!</span> I will be a Research Scientist Intern at <a href="https://research.facebook.com/" style="background: linear-gradient(135deg, #0066FF, #00D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold; font-size: 1.05em; text-decoration: none;">Meta</a>, Menlo Park in summer 2026. <span style="color: gold;">See you in the Bay Area!</span>
-                      <!--During my undergraduate studies, I worked closely with <a href="https://people.duke.edu/~zg70/">Prof. Neil Gong</a> and <a href="https://scholar.google.com/citations?user=eTCfl6cAAAAJ&hl=en">Prof. Weiming Zhang</a>./> -->
-                    </p>
-
-
-                    <p style="text-align: center">
-                      <a href="mailto:ming.yin@duke.edu">Email</a
-                      >&nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=OLo70zgAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a>
-                      &nbsp;/&nbsp;
-                      <a
-                        href="https://www.linkedin.com/in/ming-yin-3316ba270/"
-                        >LinkedIn</a
-                      >&nbsp;/&nbsp;
-                    </p>
-                  </td>
-                  <td style="padding: 2.5%; width: 40%; max-width: 40%">
-                    <a href="images/Ming3.png"
-                      ><img
-                        style="width: 100%; max-width: 100%"
-                        alt="profile photo"
-                        src="images/Ming3.png"
-                        class="hoverZoomLink"
-                    /></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-<!-- 
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td style="padding: 5px; width: 100%; vertical-align: middle">
-                    <h2>🚀 Research Interest</h2>
-                    <p>
-                      LLM Agents, LLM Reasoning, Trustworthy AI.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
--->
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td style="padding: 5px 5px 5px 0; width: 100%; vertical-align: middle">
-                    <h2> Publications</h2>
-                    (* indicates Equal Contribution)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            
-<table
-style="
-  width: 100%;
-  border: 0px;
-  border-spacing: 0px;
-  border-collapse: separate;
-  margin-right: auto;
-  margin-left: auto;
-"
->
-<td style="padding: 5px; width: 30%; vertical-align: middle">
-  <div class="one">
-    <div class="two"></div>
-    <!-- placeholder image -->
-    <img src="images/livemcp.png" width="200" />
-  </div>
-</td>
-
-<td style="padding: 5px; width: 90%; vertical-align: top">
-  <span class="papertitle"
-    ><a href="https://arxiv.org/pdf/2508.15760">LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries</a></span
-  >
-  <br />
-  <br>
-  <strong>Ming Yin</strong>, Dinghan Shen, Silei Xu, Jianbing Han, Sixun Dong, Mian Zhang, Yebowen Hu, ..., Yiran Chen, Kaiqiang Song
-  <br />
-  <br>
-  <em><span style="color:blue;">preprint</span></em>
-  <br />
-  <br>
-  Media Coverage: <a href="https://mp.weixin.qq.com/s/6H2P2YVjBnpCa9yVX53fnw">[Synced]</a>&nbsp;&nbsp;&nbsp;<a href="https://x.com/_akhaliq/status/1959073276937801737">[AK]</a>&nbsp;&nbsp;&nbsp;<a href="https://x.com/omarsar0/status/1966525731082768782">[Elvis]</a>
-  <br />
-</td>
-
-</table>
-<hr class="separator-thin">
-
-<table
-style="
-  width: 100%;
-  border: 0px;
-  border-spacing: 0px;
-  border-collapse: separate;
-  margin-right: auto;
-  margin-left: auto;
-"
->
-<td style="padding: 5px; width: 30%; vertical-align: middle">
-  <div class="one">
-    <div class="two"></div>
-    <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-    <img src="images/LLMAgent2.png" width="200" />
-  </div>
-</td>
-
-<td style="padding: 5px; width: 90%; vertical-align: top">
-  <span class="papertitle"
-    ><a href="https://arxiv.org/pdf/2505.00212">Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</a></span
-  >
-  <br />
-  <br>
-  Shaokun Zhang*, <strong>Ming Yin*</strong>, Jieyu Zhang, Jiale Liu, Jingyang Zhang, Beibin Li, Chi Wang, Huazheng Wang, Yiran Chen, Qingyun Wu
-  <br />
-  <br>
-  <em><span style="color:blue;">ICML 2025</span> (<span style="color:gold;">🏆 Spotlight, 313/12107 = 2.58%</span>)</em>
-  <br />
-  
-  <br>
-  Media Coverage: <a href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA">[Synced]</a>&nbsp;&nbsp;&nbsp;<a href="https://mp.weixin.qq.com/s/dIhJj6Z6WmBAobM3Ay1YjQ">[AIEra]</a>&nbsp;&nbsp;&nbsp;<a href="https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA">[QbitAI]</a>
-  <br />
-</td>
-
-</table>
-<hr class="separator-thin">
-
-<table
-  style="
-    width: 100%;
-    border: 0px;
-    border-spacing: 0px;
-    border-collapse: separate;
-    margin-right: auto;
-    margin-left: auto;
-  "
->
-  <td style="padding: 5px; width: 30%; vertical-align: middle">
-    <div class="one">
-      <div class="two"></div>
-      <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-      <img src="images/PFRS2.png" width="200" />
+          </div>
+          <div id="my-title" class="text-grey">
+            PhD Student @ Duke ECE • Advised by Prof. Yiran Chen
+          </div>
+          <div class="social-media">
+            <a href="https://scholar.google.com/citations?user=OLo70zgAAAAJ&hl=zh-CN&oi=ao" class="icon-button github">
+              <i class="ai ai-google-scholar-square icon-github"></i>
+              <span></span>
+            </a>
+            <a href="https://www.linkedin.com/in/ming-yin-3316ba270/" class="icon-button linkedin">
+              <i class="fa fa-linkedin icon-linkedin"></i>
+              <span></span>
+            </a>
+            <a href="mailto:ming.yin@duke.edu" class="icon-button github">
+              <i class="fa fa-envelope icon-github"></i>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </td>
 
-  <td style="padding: 5px; width: 90%; vertical-align: top">
-    <span class="papertitle"
-      ><a href="https://arxiv.org/pdf/2402.11637.pdf">Poisoning Federated Recommender Systems with Fake Users</a></span
-    >
-    <br />
-    <br>
-    <strong>Ming Yin</strong>*, Yichang Xu*, Minghong Fang, Neil Gong
-    <br />
-    <br>
-    <em><span style="color:blue;">WWW 2024</span></em>
-    <br />
-    
-   
-  </td>
- 
+    <div class="page-content">
+      <div class="wrapper">
+        <div id="about" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-id-card" aria-hidden="true"></i>
+            About
+          </h1>
+          <div class="bio-body" style="overflow: hidden">
+            <p>
+              I am a second-year PhD student at <a href="https://duke.edu/"><strong>Duke University</strong></a>, supervised by
+              <a href="https://ece.duke.edu/faculty/yiran-chen"><strong>Prof. Yiran Chen</strong></a>.
+              I received my Bachelor's degree from the <a href="https://en.scgy.ustc.edu.cn/">School of the Gifted Young</a>,
+              <a href="https://en.ustc.edu.cn/"><strong>USTC</strong></a> in 2024 at 20 years old.
+                    </p>
+                    <p>
+              My research interests include LLM agents, LLM reasoning, and trustworthy AI.
+            </p>
+            <div class="announcement">
+              <span class="tag">🎉 New!</span>
+              I will be a Research Scientist Intern at
+              <a href="https://x.com/AIatMeta" class="meta-highlight">Meta</a>, Menlo Park in summer 2026.
+              <span class="tag">See you in the Bay Area!</span>
+            </div>
+          </div>
+        </div>
 
+        <div id="news" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            News
+          </h1>
+          <div class="bio-body">
+            <ul>
+              <li class="indented" data-date="[Summer 2026]">Heading to Menlo Park as a Research Scientist Intern at Meta.</li>
+              <li class="indented" data-date="[May 2025]">Starting as a GenAI Research Intern at Zoom (Seattle, WA).</li>
+              <li class="indented" data-date="[ICML 2025]">Which Agent Causes Task Failures and When? accepted as Spotlight (2.58%).</li>
+              <li class="indented" data-date="[ICCV 2025]">Keyframe-oriented Vision Token Pruning accepted to ICCV 2025.</li>
+            </ul>
+  </div>
+  </div>
 
-</table>
+        <div id="publications" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            Selected Publications
+          </h1>
+          <div class="bio-body">
+            <ul class="pub-list">
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2505.00212">Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</a></span><br />
+                Shaokun Zhang*, <strong>Ming Yin*</strong>, Jieyu Zhang, Jiale Liu, Jingyang Zhang, Beibin Li, Chi Wang, Huazheng Wang, Yiran Chen, Qingyun Wu<br />
+                <span class="pub-venue">ICML 2025 (Spotlight)</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2402.11637.pdf">Poisoning Federated Recommender Systems with Fake Users</a></span><br />
+                <strong>Ming Yin</strong>*, Yichang Xu*, Minghong Fang, Neil Gong<br />
+                <span class="pub-venue">WWW 2024</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2411.16746">LoBAM: LoRA-Based Backdoor Attack on Model Merging</a></span><br />
+                <strong>Ming Yin</strong>, Jingyang Zhang, Jingwei Sun, Minghong Fang, Hai Li, Yiran Chen<br />
+                <span class="pub-venue">ICLR 2025 Workshop</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2503.10742.pdf">Keyframe-oriented Vision Token Pruning: Enhancing Efficiency of Large Vision Language Models on Long-Form Video Processing</a></span><br />
+                Yudong Liu, Jingwei Sun, Yueqian Lin, Jingyang Zhang, <strong>Ming Yin</strong>, Qinsi Wang, Jianyi Zhang, Hai Li, Yiran Chen<br />
+                <span class="pub-venue">ICCV 2025</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2403.03149.pdf">Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks</a></span><br />
+                Yichang Xu*, <strong>Ming Yin*</strong>, Minghong Fang, Neil Gong<br />
+                <span class="pub-venue">WWW 2024</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2508.15760">LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries</a></span><br />
+                <strong>Ming Yin</strong>, Dinghan Shen, Silei Xu, Jianbing Han, Sixun Dong, Mian Zhang, Yebowen Hu, ... , Yiran Chen, Kaiqiang Song<br />
+                <span class="pub-venue">Preprint</span>
+              </li>
+              <li class="pub-item">
+                <span class="pub-title"><a href="https://arxiv.org/pdf/2508.09125">Complex Logical Instruction Generation</a></span><br />
+                Mian Zhang, Shujian Liu, Sixun Dong, <strong>Ming Yin</strong>, Yebowen Hu, Xun Wang, Zhiyu Zoey Chen, Kaiqiang Song<br />
+                <span class="pub-venue">Preprint</span>
+              </li>
+            </ul>
+          </div>
+    </div>
 
-<hr class="separator-thin">
+        <div id="experience" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            Experience
+          </h1>
+          <div class="bio-body">
+            <ul>
+              <li class="indented" data-date="[Jun 2026 – Aug 2026]"><strong>Research Scientist Intern</strong>, <a href="https://x.com/AIatMeta"><strong>Meta</strong></a>, Menlo Park, CA.</li>
+              <li class="indented" data-date="[May 2025 – Aug 2025]"><strong>GenAI Research Intern</strong>, Zoom, Seattle, WA.</li>
+            </ul>
+          </div>
+        </div>
 
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <td style="padding: 5px; width: 30%; vertical-align: middle">
-                <div class="one">
-                  <div class="two"></div>
-                  <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-                  <img src="images/LoRA2.png" width="200" />
+        <div id="education" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            Education
+          </h1>
+          <div class="bio-body">
+            <ul>
+              <li class="indented" data-date="[2024 – Present]"><strong>PhD in Electrical & Computer Engineering</strong>, Duke University.</li>
+              <li class="indented" data-date="[2020 – 2024]"><strong>B.S. in Mathematics (Honors)</strong>, School of the Gifted Young, USTC.</li>
+            </ul>
+          </div>
                 </div>
-              </td>
 
-              <td style="padding: 5px; width: 90%; vertical-align: top">
-                <span class="papertitle"
-                  ><a href="https://arxiv.org/pdf/2411.16746">LoBAM: LoRA-Based Backdoor Attack on Model Merging</a></span
-                >
-                <br />
-                <br>
-                <strong>Ming Yin</strong>, Jingyang Zhang, Jingwei Sun, Minghong Fang, Hai Li, Yiran Chen
-                <br />
-                <br>
-                <em><span style="color:blue;">ICLR 2025 Workshop</span></em>
-                <br />
-                
-               
-              </td>
-             
-
-            </table>
-            <hr class="separator-thin">
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <td style="padding: 5px; width: 30%; vertical-align: middle">
-                <div class="one">
-                  <div class="two"></div>
-                  <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-                  <img src="images/KVTP2.png" width="200" />
+        <div id="service" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            Service
+          </h1>
+          <div class="bio-body">
+            <p class="section-gap"><strong>Reviewer:</strong> EMNLP 2025, ICLR 2025, ICCV 2025, NeurIPS 2025, TDSC.</p>
                 </div>
-              </td>
-
-              <td style="padding: 5px; width: 90%; vertical-align: top">
-                <span class="papertitle"
-                  ><a href="https://arxiv.org/pdf/2503.10742.pdf">Keyframe-oriented Vision Token Pruning: Enhancing Efficiency of Large Vision Language Models on Long-Form Video Processing</a></span
-                >
-                <br />
-                <br>
-                Yudong Liu, Jingwei Sun, Yueqian Lin, Jingyang Zhang, <strong>Ming Yin</strong>, Qinsi Wang, Jianyi Zhang, Hai Li, Yiran Chen
-                <br />
-                <br>
-                <em><span style="color:blue;">ICCV 2025</span></em>
-                <br />
-                
-               
-              </td>
-             
-
-            </table>
-            <hr class="separator-thin">
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <td style="padding: 5px; width: 30%; vertical-align: middle">
-                <div class="one">
-                  <div class="two"></div>
-                  <img src="images/Infer22.png" width="200" />
                 </div>
-              </td>
 
-              <td style="padding: 5px; width: 90%; vertical-align: top">
-                <span class="papertitle"
-                  >
-                  <a href="https://arxiv.org/pdf/2403.03149.pdf">Robust Federated Learning Mitigates Client-side Training Data
-                    Distribution Inference Attacks</a>
-                  </span
-                >
-                <br />
-                <br>
-                Yichang Xu*, <strong>Ming Yin*</strong>, Minghong Fang, Neil Gong
-              
-                <br /> 
-                <br>            
-                <em><span style="color:blue;">WWW 2024</span></em>
-                <br />
-                <p>
-                 
-                </p>
-              </td>
-            </table>
-            <hr class="separator-thin">
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <td style="padding: 5px; width: 30%; vertical-align: middle">
-                <div class="one">
-                  <div class="two"></div>
-                  <!-- placeholder image -->
-                  <img src="images/logicifgen.png" width="200" />
+        <div id="teaching" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            Teaching
+          </h1>
+          <div class="bio-body">
+            <p class="section-gap"><strong>Teaching Assistant</strong> — ECE 661 Computer Engineering Machine Learning and Deep Neural Nets, Fall 2025.</p>
                 </div>
-              </td>
-
-              <td style="padding: 5px; width: 90%; vertical-align: top">
-                <span class="papertitle"
-                  ><a href="https://arxiv.org/pdf/2508.09125">Complex Logical Instruction Generation</a></span
-                >
-                <br />
-                <br>
-                Mian Zhang, Shujian Liu, Sixun Dong, <strong>Ming Yin</strong>, Yebowen Hu, Xun Wang, Zhiyu Zoey Chen, Kaiqiang Song
-                <br />
-                <br>
-                <em><span style="color:blue;">preprint</span></em>
-                <br />
-                
-               
-              </td>
-             
-
-            </table>
-            <hr class="separator-thin">
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <td style="padding: 5px; width: 30%; vertical-align: middle">
-                <div class="one">
-                  <div class="two"></div>
-                  <!-- placeholder image -->
-                  <img src="images/MMTok.png" width="200" />
                 </div>
-              </td>
-
-              <td style="padding: 5px; width: 90%; vertical-align: top">
-                <span class="papertitle"
-                  ><a href="https://arxiv.org/pdf/2508.18264">MMTok: Multimodal Coverage Maximization for Efficient Inference of VLMs</a></span
-                >
-                <br />
-                <br>
-                Sixun Dong, Juhua Hu, Mian Zhang, <strong>Ming Yin</strong>, Yanjie Fu, Qi Qian
-                <br />
-                <br>
-                <em><span style="color:blue;">preprint</span></em>
-                <br />
-                
-               
-              </td>
-             
-
-            </table>
-            <hr class="separator-thin">
-
-            <!-- <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td style="padding: 5px; width: 100%; vertical-align: middle">
-                    <h2>Projects</h2>
-                    <p></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
-            <table
-            style="
-              width: 100%;
-              border: 0px;
-              border-spacing: 0px;
-              border-collapse: separate;
-              margin-right: auto;
-              margin-left: auto;
-            "
-          >
-            <tbody>
-              <tr>
-                <td style="padding: 5px 5px 5px 0; width: 100%; vertical-align: middle">
-                  <h2>Experiences</h2>
-                 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-       
-       
-          
-<table
-style="
-width: 100%;
-border: 0px;
-border-spacing: 0px;
-border-collapse: separate;
-margin-right: auto;
-margin-left: auto;
-"
->
-<td style="padding: 5px; width: 30%; vertical-align: middle">
-<div class="one">
-  <div class="two"></div>
-  <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-  <img src="images/Meta-Logo.png" width="200" />
 </div>
-</td>
-
-<td style="padding: 5px; width: 90%; vertical-align: top">
-<span class="papertitle"
-style="color:rgb(0, 76, 255);">Meta</span>, Research Scientist Intern
-<br />
-
-
-<br>
-<em><span>🌉 Menlo Park, CA</span></em>
-<br />
-
-<br>
-<em><span>May 2026 - Aug 2026</span></em>
-<br />
-</td>
-
-
-</table>
-
-<hr class="separator-thin">
-
-<table
-style="
-width: 100%;
-border: 0px;
-border-spacing: 0px;
-border-collapse: separate;
-margin-right: auto;
-margin-left: auto;
-"
->
-<td style="padding: 5px; width: 30%; vertical-align: middle">
-<div class="one">
-  <div class="two"></div>
-  <!-- <img src="images/workingpaper.jpeg" width="200" /> -->
-  <img src="images/Zoom-Logo.png" width="200" />
-</div>
-</td>
-
-<td style="padding: 5px; width: 90%; vertical-align: top">
-<span class="papertitle"
-style="color:rgb(0, 76, 255);">Zoom</span>, Research Intern
-<br />
-
-
-<br>
-<em><span>🌊 Seattle, WA</span></em>
-<br />
-
-<br>
-<em><span>May 2025 - Aug 2025</span></em>
-<br />
-</td>
-
-
-</table>
-
-<hr class="separator-thin">
-
-            <table
-            style="
-              width: 100%;
-              border: 0px;
-              border-spacing: 0px;
-              border-collapse: separate;
-              margin-right: auto;
-              margin-left: auto;
-            "
-          >
-            <tbody>
-              <tr>
-                <td style="padding: 5px 5px 5px 0; width: 100%; vertical-align: middle">
-                  <h2> Reviewer Service
-                  </h2>
-                  <div class="reviewer-container">
-                    <span class="review-item conference">EMNLP 2025</span>
-                    <span class="review-item conference">ICLR 2025</span>
-                    <span class="review-item conference">ICCV 2025</span>
-                    <span class="review-item conference">NeurIPS 2025</span>
-                    <span class="review-item journal">TDSC</span>
                   </div>
-                </td>
-              </tr>
-            </tbody>
-
-          </table>
-
-          <table
-            style="
-              width: 100%;
-              border: 0px;
-              border-spacing: 0px;
-              border-collapse: separate;
-              margin-right: auto;
-              margin-left: auto;
-            "
-          >
-            <tbody>
-              <tr>
-                <td style="padding: 5px 5px 5px 0; width: 100%; vertical-align: middle">
-                  <h2> Teaching</h2>
-                  <strong>Teaching Assistant</strong> - ECE 661 Computer Engineering Machine Learning and Deep Neural Nets, Fall 2025
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=P_j5NmoygM3uhcWirSjS9X1L1wIFmErKg8e9GxZQA5Y&cl=ffffff&w=250"></script>
-
-           
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </body>
 </html>
