@@ -891,12 +891,12 @@ pre>code {
 .maxim>div>b,
 .maxim>p>b,
 .maxim>b {
-    color: #00a200
+    color: #4A90E2
 }
 
 .maxim>div>s,
 .maxim>s {
-    color: #00a200
+    color: #4A90E2
 }
 
 .maxim>div>em,
@@ -1929,7 +1929,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .publisher {
-    color: #00a200;
+    color: #4A90E2;
     font-size: 14px;
     font-weight: 600
 }
