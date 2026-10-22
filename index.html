@@ -24,6 +24,15 @@
   <link rel="preload" href="assets/fonts/HankenGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css?v=2026-10">
 
+  <style>
+    /* Wider screens: the portrait is exactly as tall as the name, roles and links beside it */
+    @media (min-width: 601px) {
+      .intro .portrait {
+        width: auto;
+        height: calc(clamp(2.35rem, 6.2vw, 3.3rem) * 1.05 + 6.4675rem);
+      }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,12 +89,13 @@
 
     <div class="about">
       <p>
-        I'm a third-year PhD student at \href{https://duke.edu/}{Duke University}, advised by
-\href{https://cei.pratt.duke.edu/people/yiran-chen}{Prof.~Yiran Chen}.
-I'm currently a research scientist intern at \href{https://ai.meta.com/}{\textbf{Meta}}
-and was previously a research intern at \href{https://www.zoom.com/}{\textbf{Zoom}}.
-Before Duke, I received my B.E.\ in Computer Science from the
-\href{https://en.scgy.ustc.edu.cn/}{School of the Gifted Young} at \href{https://en.ustc.edu.cn/}{USTC}.
+        I'm a third-year PhD student at <a href="https://duke.edu/">Duke University</a>, advised by
+        <a href="https://cei.pratt.duke.edu/people/yiran-chen">Prof. Yiran Chen</a>.
+        I'm currently a research scientist intern at <a href="https://ai.meta.com/"><strong>Meta</strong></a>
+        and was previously a research intern at <a href="https://www.zoom.com/"><strong>Zoom</strong></a>.
+        Before Duke, I received my B.E. in Computer Science from the
+        <a href="https://en.scgy.ustc.edu.cn/">School of the Gifted Young</a> at
+        <a href="https://en.ustc.edu.cn/">USTC</a>.
       </p>
     </div>
 
