@@ -1,514 +1,392 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Ming Yin</title>
-  <meta name="description" lang="en" content="This is an academic website for Ming Yin">
-  <meta name="keywords" lang="en" content="Ming Yin, Duke University, LLM, AI" />
+  <meta name="description" content="Ming Yin is a PhD student at Duke University working on reliable LLM agents: evaluation on real tools, failure attribution, tool-misuse detection, and post-training.">
+  <meta name="author" content="Ming Yin">
+  <link rel="canonical" href="https://mingyin1.github.io/">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ming Yin">
+  <meta property="og:description" content="PhD student at Duke University working on LLM agents and post-training.">
+  <meta property="og:url" content="https://mingyin1.github.io/">
+  <meta property="og:image" content="https://mingyin1.github.io/images/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicon.ico">
-  
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="js/jquery-2.1.3.min.js"></script>
+  <link rel="preload" href="assets/fonts/Spectral-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/HankenGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=2026-10">
 
-  </head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ming Yin",
+    "jobTitle": "PhD student",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Duke University" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Science and Technology of China" },
+    "email": "mailto:ming.yin@duke.edu",
+    "url": "https://mingyin1.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=OLo70zgAAAAJ",
+      "https://www.linkedin.com/in/ming-yin-3316ba270/"
+    ]
+  }
+  </script>
+</head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <body>
-
-    <header class="site-header">
-  <div class="wrapper">
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        <a class="page-link" href="#bio"><b>About</b></a>
-        <a class="page-link" href="#Education"><b>Education</b></a>
-        <a class="page-link" href="#Experiences"><b>Experiences</b></a>
-        <a class="page-link" href="#publications"><b>Publications</b></a>
-        <a class="page-link" href="#awards"><b>Awards</b></a>
-        <a class="page-link" href="#teaching"><b>Teaching</b></a>
-        <a class="page-link" href="#academicservices"><b>Services</b></a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
-    <div id="profile-namecard" class="profile-wrapper-new wrapper-light">
-      <div class="profile-photo-inside">
-        <img id="profile-avatar" src="./images/Ming3.png" alt="Me" class="photo-fill-card"/>
-      </div>
-      <div id="my-contact" class="profile-info-right">
-        <div id="my-name" class="text-grey-dark">
-          Ming Yin<br>
-        </div>
-        <div id="my-title" class="text-grey">
-          PhD Student @ Duke University
-        </div>
-        <div class="social-media">
-          <a href="https://scholar.google.com/citations?user=OLo70zgAAAAJ&hl=zh-CN&oi=ao" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/ming-yin-3316ba270/" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-         
-          <a href="mailto:ming.yin@duke.edu" class="icon-button github">
-            <i class="fa fa-envelope icon-github"></i>
-            <span></span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="page-content">
-<div class="wrapper">
-<div id="bio" class="bio">
-
-  <h1 class="md-heading text-left">
-    <i class="fa fa-id-card" aria-hidden="true"></i>
-    About
-  </h1>
-  <div class="bio-body" style="overflow:hidden;">
-    <p> 
-      Hi, I am a second-year PhD student at <a href="https://duke.edu/"><strong>Duke University</strong></a>, where I am fortunate to be advised by <a href="https://ece.duke.edu/faculty/yiran-chen">Prof. Yiran Chen</a>.
-      <br>I received my Bachelor's degree in Computer Science from <a href="https://en.scgy.ustc.edu.cn/">School of the Gifted Young</a>, <a href="https://en.ustc.edu.cn/"><strong>University of Science and Technology of China</strong></a> in 2024 at 20 years old.
-      <br><br>
-      <span style="color: gold; font-weight: bold;">🎉 New!</span> I will be a Research Scientist Intern at <a href="https://x.com/AIatMeta" style="background: linear-gradient(135deg, #0066FF, #00D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold;">Meta</a>, Menlo Park in summer 2026. <span style="color: gold;">See you in the Bay Area!</span>
-      <br><br>
-      My research focuses on <strong>LLM Agents</strong>, <strong>LLM Reasoning</strong>, and <strong>Trustworthy AI</strong>.
-    </p>
-  </div>
-</div>
-
-<div id="Education" class="bio">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-    Education
-  </h1>
-  <div class="bio-body" style="overflow:hidden;">
-    <table style="width: 100%;">
-      <tbody>
-        <tr>
-          <td width="80%" style="vertical-align: middle;">
-              <strong>Ph.D.</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aug. 2024 - Present  <br> 
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Duke University</b>, Durham, NC, U.S.<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ph.D. student in ECE<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Advisor: <a href="https://ece.duke.edu/faculty/yiran-chen">Prof. Yiran Chen</a>
-                  </td>
-          <td width="20%" style="text-align: right; vertical-align: middle;">
-            <img src="images/Duke_University_logo.svg.png" width="100px">
-                  </td>
-                </tr>
-        <tr style="height: 10px;">
-          <td></td>
-        </tr>
-        <tr>
-          <td width="80%" style="vertical-align: middle;">
-              <strong>B.S.</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sep. 2020 - Jun. 2024 <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>University of Science and Technology of China (USTC)</b><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B.S. in Computer Science from School of the Gifted Young<br> 
-          </td>
-          <td width="20%" style="text-align: right; vertical-align: middle;">
-            <img src="images/Logo_of_University_of_Science_and_Technology_of_China.svg (1).png" width="100px">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-  </div>
-</div>
-
-
-<div id="Experiences" class="bio">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-briefcase" aria-hidden="true"></i>
-    Experiences
-  </h1>
-  <div class="bio-body" style="overflow:hidden;">
-    <table style="width: 100%;">
-              <tbody>
-                <tr>
-          <td width="80%" style="vertical-align: middle;">
-            <li>
-              <strong>May 2026 -- Aug 2026, <a href="https://x.com/AIatMeta"><strong>Meta</strong></a></strong>, Menlo Park, CA, U.S.<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; <strong>Research Scientist Intern</strong><br>
-            </li> 
-          </td>
-          <td width="20%" style="text-align: right; vertical-align: middle;">
-            <img src="images/Meta-Logo.png" width="110px">
-          </td>
-        </tr>
-        <tr style="height: 5px;">
-          <td></td>
-        </tr>
-        <tr>
-          <td width="80%" style="vertical-align: middle;">
-            <li>
-              <strong>May 2025 -- Aug 2025, <a href="https://zoom.us/"><strong>Zoom</strong></a></strong>, Seattle, WA, U.S.<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; <strong>Research Intern</strong>, Worked on Agent MCP Tool Calling<br>
-            </li> 
-          </td>
-          <td width="20%" style="text-align: right; vertical-align: middle;">
-            <img src="images/Zoom-Logo.png" width="107px">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-  </div>
-  </div>
-
-
-
-<div id="publications" class="publications">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-file" aria-hidden="true"></i>
-    Selected Publications <span style="font-size: 14px; font-weight: normal;">(* Equal Contribution)</span>
-  </h1>
-  <div class="pub-list">
-    
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/livemcp.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author"><b>Ming Yin</b></a>,
-            <a class="author">Dinghan Shen</a>,
-            <a class="author">Silei Xu</a>,
-            <a class="author">Jianbing Han</a>,
-            <a class="author">Sixun Dong</a>,
-            <a class="author">Mian Zhang</a>,
-            <a class="author">Yebowen Hu</a>,
-            <a class="author">...</a>,
-            <a class="author">Yiran Chen</a>,
-            <a class="author">Kaiqiang Song</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">preprint</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2508.15760"><strong>Paper</strong></a>]
-          [<a class="tag" href="https://mp.weixin.qq.com/s/6H2P2YVjBnpCa9yVX53fnw"><strong>Synced</strong></a>]
-          [<a class="tag" href="https://x.com/_akhaliq/status/1959073276937801737"><strong>AK</strong></a>]
-        </div>
-      </div>
-                </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/LLMAgent2.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author">Shaokun Zhang*</a>,
-            <a class="author"><b>Ming Yin*</b></a>,
-            <a class="author">Jieyu Zhang</a>,
-            <a class="author">Jiale Liu</a>,
-            <a class="author">Jingyang Zhang</a>,
-            <a class="author">Beibin Li</a>,
-            <a class="author">Chi Wang</a>,
-            <a class="author">Huazheng Wang</a>,
-            <a class="author">Yiran Chen</a>,
-            <a class="author">Qingyun Wu</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher"><span style="color: gold;">🏆</span> ICML 2025 Spotlight</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2505.00212"><strong>Paper</strong></a>]
-          [<a class="tag" href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA"><strong>Synced</strong></a>]
-        </div>
-      </div>
-    </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/PFRS2.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          Poisoning Federated Recommender Systems with Fake Users
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author"><b>Ming Yin*</b></a>,
-            <a class="author">Yichang Xu*</a>,
-            <a class="author">Minghong Fang</a>,
-            <a class="author">Neil Gong</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">WWW 2024</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2402.11637.pdf"><strong>Paper</strong></a>]
-        </div>
-      </div>
-                </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/LoRA2.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          LoBAM: LoRA-Based Backdoor Attack on Model Merging
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author"><b>Ming Yin</b></a>,
-            <a class="author">Jingyang Zhang</a>,
-            <a class="author">Jingwei Sun</a>,
-            <a class="author">Minghong Fang</a>,
-            <a class="author">Hai Li</a>,
-            <a class="author">Yiran Chen</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">ICLR 2025 Workshop</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2411.16746"><strong>Paper</strong></a>]
-        </div>
-      </div>
-    </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/MMTok.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          MMTok: Multimodal Coverage Maximization for Efficient Inference of VLMs
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author">Sixun Dong</a>,
-            <a class="author">Juhua Hu</a>,
-            <a class="author">Mian Zhang</a>,
-            <a class="author"><b>Ming Yin</b></a>,
-            <a class="author">Yanjie Fu</a>,
-            <a class="author">Qi Qian</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">ICLR 2026</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2508.18264"><strong>Paper</strong></a>]
-        </div>
-      </div>
-    </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/KVTP2.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          Keyframe-oriented Vision Token Pruning: Enhancing Efficiency of Large Vision Language Models on Long-Form Video Processing
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author">Yudong Liu</a>,
-            <a class="author">Jingwei Sun</a>,
-            <a class="author">Yueqian Lin</a>,
-            <a class="author">Jingyang Zhang</a>,
-            <a class="author"><b>Ming Yin</b></a>,
-            <a class="author">Qinsi Wang</a>,
-            <a class="author">Jianyi Zhang</a>,
-            <a class="author">Hai Li</a>,
-            <a class="author">Yiran Chen</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">ICCV 2025</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2503.10742.pdf"><strong>Paper</strong></a>]
-        </div>
-      </div>
-                </div>
-
-    <hr class="pub-divider">
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/Infer22.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks
-        </div>
-        <div class="authors">
-          <font style="font-size: 10pt;">
-            <a class="author">Yichang Xu*</a>,
-            <a class="author"><b>Ming Yin*</b></a>,
-            <a class="author">Minghong Fang</a>,
-            <a class="author">Neil Gong</a>
-          </font>
-        </div>
-        <div class="publish">
-          <span class="publisher">WWW 2024</span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2403.03149.pdf"><strong>Paper</strong></a>]
-        </div>
-      </div>
-                </div>
-
-    <hr class="pub-divider">
-
-  </div>
-</div>
-</div>
-
-<div class="wrapper">
-  <div id="teaching" class="bio">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-book" aria-hidden="true"></i>
-        Teaching 
-      </h1>  
-      <strong>Teaching Assistant</strong>
-      <ul>
-      <li>
-        ECE 661: Computer Engineering Machine Learning and Deep Neural Nets - Fall 2025<br>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="wrapper">
-  <div id="academicservices" class="bio">
-    <div class="bio-body" style="overflow:hidden;">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-users" aria-hidden="true"></i>
-        Academic Services
-      </h1>  
-      <b>Conference Reviewer:</b> ICLR 2026, EMNLP 2025, ICLR 2025, ICCV 2025, NeurIPS 2025<br>
-      <b>Journal Reviewer:</b> TDSC
-    </div>
-  </div>
-                </div>
-
-
-<div class="wrapper">
-  <div id="awards" class="bio">
-    <h1 class="md-heading text-left">
-      <i class="fa fa-trophy" aria-hidden="true"></i>
-      Awards
-    </h1>
+  <nav class="site-nav" aria-label="Sections">
     <ul>
-      <li><b>Duke ECE Travel Fellowship</b> <span style="float: right; color: #828282;">2025</span></li>
-      <li><b>Excellent Student Scholarship Gold</b> <i>(Top 3%)</i> <span style="float: right; color: #828282;">2023</span></li>
-      <li><b>Excellent Student Scholarship Gold</b> <i>(Top 3%)</i> <span style="float: right; color: #828282;">2021</span></li>
-      <li><b>First Prize of Chinese Physics Olympiad</b> <i>(Top 0.04%)</i> <span style="float: right; color: #828282;">2019</span></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#awards">Awards</a></li>
     </ul>
-  </div>
-</div>
+  </nav>
 
+  <main id="main">
 
-
-
-<footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Email:</li>
-          <li><a href="mailto:ming.yin@duke.edu">ming.yin [at] duke.edu</a></li>
+    <!-- ===================== Intro ===================== -->
+    <header class="intro" id="about">
+      <div>
+        <h1>Ming Yin</h1>
+        <p class="roles">
+          PhD student, Duke University<br>
+          Research Scientist Intern, Meta
+        </p>
+        <ul class="contact">
+          <li><a href="mailto:ming.yin@duke.edu">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=OLo70zgAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/ming-yin-3316ba270/">LinkedIn</a></li>
+          <li><a href="file/Ming_Yin.pdf?v=2026-10">CV</a> <span class="updated">(updated Oct 2026)</span></li>
         </ul>
-</div>
-
-      <div class="footer-col  footer-col-2">
-          <a href="https://scholar.google.com/citations?user=OLo70zgAAAAJ&hl=zh-CN&oi=ao" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/ming-yin-3316ba270/" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-
-          <a href="mailto:ming.yin@duke.edu" class="icon-button github">
-            <i class="fa fa-envelope icon-github"></i>
-            <span></span>
-          </a>
       </div>
+      <picture>
+        <source srcset="images/ming-portrait.webp" type="image/webp">
+        <img class="portrait" src="images/ming-portrait.jpg" width="600" height="800"
+             alt="Portrait of Ming Yin">
+      </picture>
+    </header>
 
-      <div class="footer-col footer-col-3">
-        <p class="text">Last updated: Dec, 2025.<br>Thanks <a href='https://wanjiazhao1203.github.io/'>Wanjia Zhao </a>for the template.</p>
-      </div>
+    <div class="about">
+      <p>
+        I'm a third-year PhD student at <a href="https://duke.edu/">Duke University</a>, advised by
+        <a href="https://cei.pratt.duke.edu/people/yiran-chen">Prof. Yiran Chen</a>.
+        I graduated from the <a href="https://en.scgy.ustc.edu.cn/">School of the Gifted Young</a> at the
+        <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a> (USTC) in 2024,
+        with a B.E. in Computer Science, at age 20.
+      </p>
+      <p class="focus">
+        I work on making LLM agents reliable: testing them on real tools
+        (<a href="#livemcp">LiveMCP-101</a>), finding which agent and which step caused a failure
+        (<a href="#whowhen">Who&amp;When</a>), catching tool misuse from inside the model
+        (<a href="#fewneurons">A Few Neurons</a>), and post-training models to follow what users
+        actually ask for (<a href="#history">When History Misleads</a>).
+      </p>
+      <p>
+        At Meta, I work on LLM post-training for recommendation and on long-horizon agents.
+        I have also worked on efficient multimodal models and trustworthy machine learning.
+      </p>
     </div>
-                  </div>
 
-</footer>
-    <div class="back-to-top">Top</div>
+    <!-- ===================== Publications ===================== -->
+    <section id="publications" aria-labelledby="pubs-title">
+      <h2 id="pubs-title">Publications</h2>
+      <p class="legend">* equal contribution &nbsp;&nbsp; † corresponding author</p>
 
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-    
-        }
-    });
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
-</script>
-  </body>
+      <h3 class="pub-group">LLM agents, tool use and evaluation</h3>
 
+      <article class="pub" id="whowhen">
+        <a class="thumb" href="https://arxiv.org/pdf/2505.00212" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/whowhen.webp" alt="" width="720" height="426" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2505.00212">Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</a></h4>
+          <p class="authors">Shaokun Zhang*, <span class="me">Ming Yin*</span>, Jieyu Zhang, Jiale Liu, Zhiguang Han, Jingyang Zhang, Beibin Li, Chi Wang, Huazheng Wang, Yiran Chen, Qingyun Wu</p>
+          <p class="meta">
+            <span class="venue venue--star">ICML 2025 Spotlight</span>
+            <a href="https://arxiv.org/pdf/2505.00212">Paper</a>
+            <a href="https://github.com/mingyin1/Agents_Failure_Attribution">Code and data</a>
+            <a href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA">Synced</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="livemcp">
+        <a class="thumb" href="https://arxiv.org/pdf/2508.15760" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/livemcp.webp" alt="" width="720" height="319" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2508.15760">LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries</a></h4>
+          <p class="authors"><span class="me">Ming Yin</span>, Dinghan Shen, Silei Xu, Sixun Dong, Mian Zhang, Yebowen Hu, Shujian Liu, Jianbing Han, Simin Ma, Song Wang, Sathish Reddy Indurthi, Xun Wang, Yiran Chen†, Kaiqiang Song†</p>
+          <p class="meta">
+            <span class="venue venue--pre">Preprint 2026</span>
+            <a href="https://arxiv.org/pdf/2508.15760">Paper</a>
+            <a href="https://mp.weixin.qq.com/s/6H2P2YVjBnpCa9yVX53fnw">Synced</a>
+            <a href="https://x.com/_akhaliq/status/1959073276937801737">AK</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="logicif">
+        <a class="thumb" href="https://arxiv.org/pdf/2508.09125" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/logicif.webp" alt="" width="720" height="353" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2508.09125">LogicIF: Towards Complex Logic Instruction Following</a></h4>
+          <p class="authors">Mian Zhang, Shujian Liu, Sixun Dong, <span class="me">Ming Yin</span>, Yebowen Hu, Xun Wang, Steven Ma, Song Wang, Sathish Reddy Indurthi, Haoyun Deng, Zhiyu Zoey Chen, Kaiqiang Song</p>
+          <p class="meta">
+            <span class="venue">COLM 2026</span>
+            <a href="https://arxiv.org/pdf/2508.09125">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="ale">
+        <a class="thumb" href="https://arxiv.org/pdf/2606.05405" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/ale.webp" alt="" width="720" height="374" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2606.05405">Agents’ Last Exam</a></h4>
+          <p class="authors">Yiyou Sun, Xinyang Han, Weichen Zhang, …, <span class="me">Ming Yin</span>, …, Dawn Song</p>
+          <p class="meta">
+            <span class="venue">NeurIPS 2026</span>
+            <a href="https://arxiv.org/pdf/2606.05405">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <h3 class="pub-group">LLM post-training and recommendation</h3>
+
+      <article class="pub" id="history">
+        <a class="thumb" href="https://arxiv.org/pdf/2610.02600" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/history.webp" alt="" width="720" height="325" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2610.02600">When History Misleads: Asymmetric Margin Supervision for Instruction-Guided LLM Generative Recommendation</a></h4>
+          <p class="authors"><span class="me">Ming Yin</span>, Yuhan Yang, Chen Chen, Xinyu Lin, Wentao Shi, Fangcong Yin, Chaofei Yang, Chao Yang, Jiyan Yang, Hui Zhang, Ning Jiang, Yiran Chen, Qifan Wang</p>
+          <p class="meta">
+            <span class="venue venue--pre">Preprint 2026</span>
+            <span class="note">Work done at Meta</span>
+            <a href="https://arxiv.org/pdf/2610.02600">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="mars">
+        <a class="thumb" href="https://arxiv.org/pdf/2610.07505" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/mars.webp" alt="" width="720" height="325" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2610.07505">MARS: Multi-resolution Adaptive Routing for Sequential Recommendation</a></h4>
+          <p class="authors"><span class="me">Ming Yin</span>, Sixun Dong, Yudong Liu, Wen-Yun Yang, Yunjiang Jiang, Yiran Chen</p>
+          <p class="meta">
+            <span class="venue">NeurIPS 2026</span>
+            <a href="https://arxiv.org/pdf/2610.07505">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <h3 class="pub-group">Efficient multimodal LLMs</h3>
+
+      <article class="pub" id="mmtok">
+        <a class="thumb" href="https://arxiv.org/pdf/2508.18264" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/mmtok.webp" alt="" width="720" height="311" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2508.18264">MMTok: Multimodal Coverage Maximization for Efficient Inference of VLMs</a></h4>
+          <p class="authors">Sixun Dong, Juhua Hu, Mian Zhang, <span class="me">Ming Yin</span>, Yanjie Fu, Qi Qian</p>
+          <p class="meta">
+            <span class="venue">ICLR 2026</span>
+            <a href="https://arxiv.org/pdf/2508.18264">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="kvtp">
+        <a class="thumb" href="https://arxiv.org/abs/2503.10742" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/kvtp.webp" alt="" width="720" height="426" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/abs/2503.10742">Keyframe-oriented Vision Token Pruning: Enhancing Efficiency of Large Vision Language Models on Long-Form Video Processing</a></h4>
+          <p class="authors">Yudong Liu, Jingwei Sun, Yueqian Lin, Jingyang Zhang, <span class="me">Ming Yin</span>, Qinsi Wang, Jianyi Zhang, Hai Li, Yiran Chen</p>
+          <p class="meta">
+            <span class="venue">ICCV 2025</span>
+            <a href="https://arxiv.org/abs/2503.10742">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <h3 class="pub-group">Trustworthy machine learning</h3>
+
+      <article class="pub" id="pfrs">
+        <a class="thumb" href="https://arxiv.org/pdf/2402.11637" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/pfrs.webp" alt="" width="720" height="426" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2402.11637">Poisoning Federated Recommender Systems with Fake Users</a></h4>
+          <p class="authors"><span class="me">Ming Yin</span>, Yichang Xu, Minghong Fang, Neil Gong</p>
+          <p class="meta">
+            <span class="venue">WWW 2024</span>
+            <a href="https://arxiv.org/pdf/2402.11637">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="robustfl">
+        <a class="thumb" href="https://arxiv.org/pdf/2403.03149" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/robustfl.webp" alt="" width="720" height="426" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2403.03149">Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks</a></h4>
+          <p class="authors">Yichang Xu*, <span class="me">Ming Yin*</span>, Minghong Fang, Neil Gong</p>
+          <p class="meta">
+            <span class="venue">WWW 2024</span>
+            <a href="https://arxiv.org/pdf/2403.03149">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="lobam">
+        <a class="thumb" href="https://arxiv.org/pdf/2411.16746" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/lobam.webp" alt="" width="720" height="426" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2411.16746">LoBAM: LoRA-Based Backdoor Attack on Model Merging</a></h4>
+          <p class="authors"><span class="me">Ming Yin</span>, Jingyang Zhang, Jingwei Sun, Minghong Fang, Hai Li, Yiran Chen</p>
+          <p class="meta">
+            <span class="venue">ICLR 2025 Workshop</span>
+            <a href="https://arxiv.org/pdf/2411.16746">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub" id="fewneurons">
+        <a class="thumb" href="https://arxiv.org/pdf/2608.00218" tabindex="-1" aria-hidden="true">
+          <img src="images/thumbs/fewneurons.webp" alt="" width="720" height="314" loading="lazy" decoding="async">
+        </a>
+        <div>
+          <h4><a href="https://arxiv.org/pdf/2608.00218">A Few Neurons Reveal When LLMs Misuse Tools: Sparse Detection and Selective Steering for Reliable Tool Use</a></h4>
+          <p class="authors">Yutong Ke*, <span class="me">Ming Yin*</span>, Chongwen Zhao, Kaizhu Huang</p>
+          <p class="meta">
+            <span class="venue venue--pre">Preprint 2026</span>
+            <a href="https://arxiv.org/pdf/2608.00218">Paper</a>
+          </p>
+        </div>
+      </article>
+
+      <h3 class="pub-group">Survey</h3>
+
+      <article class="pub" id="survey">
+        <div class="thumb" aria-hidden="true">
+          <img src="images/thumbs/memory.webp" alt="" width="720" height="363" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <h4>Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory</h4>
+          <p class="authors">Minghao Guo, Qingyue Jiao, Xiujin Liu, …, <span class="me">Ming Yin</span>, …, Mengdi Wang, Jiawei Han, Philip S. Yu, Ziyi Ye</p>
+          <p class="meta">
+            <span class="venue venue--pre">Preprint 2026</span>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== Experience ===================== -->
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+
+      <div class="entry">
+        <img class="logo" src="images/logos/meta.png" alt="" width="160" height="110">
+        <div>
+          <div class="entry-head">
+            <h3>Meta</h3>
+            <span class="when">May 2026 – Dec 2026</span>
+          </div>
+          <p class="role">Research Scientist Intern, Menlo Park, CA</p>
+          <p class="desc">LLM post-training for recommendation and long-horizon LLM agents. First author of <a href="#history">When History Misleads</a>.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img class="logo logo--fill" src="images/logos/zoom.png" alt="" width="160" height="160">
+        <div>
+          <div class="entry-head">
+            <h3>Zoom</h3>
+            <span class="when">May 2025 – Aug 2025</span>
+          </div>
+          <p class="role">Research Intern, Seattle, WA</p>
+          <p class="desc">Agent tool calling and the Model Context Protocol (MCP). Led <a href="#livemcp">LiveMCP-101</a>, a benchmark of 101 real-world queries that need multi-step use of MCP tools across 41 servers and 260 tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Education ===================== -->
+    <section id="education" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+
+      <div class="entry">
+        <img class="logo" src="images/logos/duke.png" alt="" width="160" height="55">
+        <div>
+          <div class="entry-head">
+            <h3>Duke University</h3>
+            <span class="when">Aug 2024 – present</span>
+          </div>
+          <p class="role">Ph.D. in Electrical and Computer Engineering</p>
+          <p class="desc">Advisor: <a href="https://cei.pratt.duke.edu/people/yiran-chen">Prof. Yiran Chen</a></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <img class="logo" src="images/logos/ustc.png" alt="" width="160" height="160">
+        <div>
+          <div class="entry-head">
+            <h3>University of Science and Technology of China</h3>
+            <span class="when">Sep 2020 – Jun 2024</span>
+          </div>
+          <p class="role">B.E. in Computer Science, School of the Gifted Young</p>
+          <p class="desc">Advisor: <a href="https://scholar.google.com/citations?user=eTCfl6cAAAAJ&amp;hl=en">Prof. Weiming Zhang</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Awards ===================== -->
+    <section id="awards" aria-labelledby="awards-title">
+      <h2 id="awards-title">Honors and awards</h2>
+      <ul class="plain-list">
+        <li><span>Duke ECE Travel Fellowship</span><span class="when">2025</span></li>
+        <li><span>Duke PhD Fellowship</span><span class="when">2024</span></li>
+        <li><span>Qiangwei Progress Scholarship, USTC <span class="detail">(top 1%)</span></span><span class="when">2023</span></li>
+        <li><span>Excellent Student Scholarship, Gold, USTC <span class="detail">(top 3%)</span></span><span class="when">2021, 2023</span></li>
+        <li><span>ICPC Asia Regional Contest <span class="detail">(top 5%)</span></span><span class="when">2022</span></li>
+        <li><span>First Prize, Chinese Physics Olympiad, Jiangsu Province <span class="detail">(top 0.04%)</span></span><span class="when">2019</span></li>
+      </ul>
+    </section>
+
+    <!-- ===================== Service ===================== -->
+    <section id="service" class="service" aria-labelledby="service-title">
+      <h2 id="service-title">Service and teaching</h2>
+      <p><span class="label">Conference reviewer:</span> NeurIPS, ICML, ICLR (2024–present)</p>
+      <p><span class="label">Journal reviewer:</span> IEEE Transactions on Dependable and Secure Computing (TDSC)</p>
+      <p><span class="label">Teaching assistant:</span> ECE 661, Computer Engineering Machine Learning and Deep Neural Nets, Duke, Fall 2025</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Last updated October 2026</p>
+      <p><a href="#about">Back to top</a></p>
+    </div>
+  </footer>
+</body>
 </html>
